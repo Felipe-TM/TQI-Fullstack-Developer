@@ -53,7 +53,7 @@ git add *
 Para realizar um commit:
 
 ```
-git commit
+git commit -m "{sua mensagem aqui}"
 ```
 
 
