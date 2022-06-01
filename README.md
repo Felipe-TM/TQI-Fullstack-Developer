@@ -8,8 +8,8 @@
 
 
 
-> É aqui que irei salvar todos os desafios de projetos e de código, além também
-> as anotações que fiz durante o percurso.
+> É aqui que irei salvar todos os desafios de projeto e de código, além também
+> das anotações que fiz durante o percurso.
 
 
 
