@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(77, 77, 77) ;
+    height: 70px;
+    color: azure;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 2px 6px 0px black;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+.logo h1 {
+    margin: 0;
+    text-transform: capitalize;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.logo h1 span {
+    color: orange;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu p {
+    margin: 0;
+    margin-right: 20px;
+    margin-top: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu p:hover {
+    transform: scale(1.1);
+}
+
+.menu p:active {
+    transform: scale(0.9);
+    transition: 0.01s;
+    background-color: gray;
+}
+
+/* MAIN */
+
+main {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color:rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.todo-container {
+    background-color: rgb(77, 77, 77) ;
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px 0 black;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.todo-container h2 {
+    font-size: 40px;
+    color: orange;
+}
+
+.todo-input {
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    user-select: none;
+}
+
+.todo-input label {
+    margin-bottom: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.todo-input input {
+    height: 30px;
+    background-color: rgb(17, 17, 17);
+    border: 2px solid orange;
+    border-radius: 5px;
+    color: white;
+}
+
+.todo-container button {
+    margin-top: 30px;
+    padding: 10px;
+    width: 100px;
+    text-transform: uppercase;
+    background-color: rgb(17, 17, 17);
+    color: orange;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .03s;
+}
+
+.todo-container button:hover {
+    border: 2px solid orange;
+}
+
+.todo-container button:active {
+    transform: scale(0.9);
+    border: 2px solid white;
+}
+
+.trace {
+    margin-top: 2rem;
+    height: 1px;
+    width: 90%;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.todo-wrapper {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo-example {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.todo-example h3 {
+    margin-left: 5px;
+    color: orange;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.todo-example label {
+    font-weight: bold;
+}
+
+.checkbox-content {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.toggle {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.toggle:checked + label{
+    text-decoration: line-through;
+    filter: opacity(0.5);
+}
+
+.todo-user {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.todo-user h3 {
+    margin-left: 5px;
+    color: orange;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.todo-user label {
+    font-weight: bold;   
+}

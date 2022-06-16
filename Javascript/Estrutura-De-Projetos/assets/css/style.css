@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html {
+    font-family:'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+}
+
+.contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(56, 56, 56);
+    width: 400px;
+    height: 400px;
+    box-shadow: 5px 5px 15px 0px black;
+    border-radius: 20px;
+}
+
+.contador h1 {
+    color: orange;
+}
+
+.contador p {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.contador button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: black;
+}
+
+.contador .subtrair {
+    color: red;
+    margin-right: 20px;
+}
+
+.contador .adicionar {
+    color: green;
+    margin-left: 20px;
+}
+
+.contador button:hover {
+    transform: scale(1.1);
+}
+
+.contador button:active {
+    transform: scale(0.9);
+    transition: 0.05s;
+    background-color: gray;
+}
+
+.contador span {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    color: white;
+}
+
+.contador #counter {
+    margin-top: 50px;
+    user-select: none;
+}
+

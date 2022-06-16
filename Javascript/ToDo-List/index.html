@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Felipe.<span>TM</span></h1>
+        </div>
+        <div class="menu">
+            <p>home</p>
+        </div>
+    </header>
+    <main>
+        <div class="todo-container" id="todo-container">
+
+            <h2> To Do List</h2>
+            <div class="todo-input">
+                <label for="todo-title-input">List Title :</label>
+                <input type="text" id='todo-title-input' required>
+            </div>
+            <div class="todo-input">
+                <label for="todo-content-input">List Task :</label>
+                <input type="text" id="todo-content-input" required>
+            </div>
+            
+            <button onclick="addNewToDo()">Add</button>
+
+            <div class="trace"></div>
+            <div class="todo-wrapper" id="todo-wrapper">
+                <div class="todo-example" id="todo-example">
+                    <h3 class="todo-title-example">Example ToDo List Title</h3>
+                    <div class="checkbox-content">
+                        <input type="checkbox" id="toggle" class="toggle">
+                        <label for="toggle">I no longer fear the razor guarding my heel</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
